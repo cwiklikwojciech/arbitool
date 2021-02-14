@@ -1,25 +1,39 @@
-import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import React, { Component } from 'react'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+
+import Confirmation from "./Confirmation.js";
+import Fee from "./Fee.js";
+import Price from "./Price.js";
+import Volume from "./volume.js";
+
+
+class App extends Component {
+
+  render() {
+
+    return (
+      <>
+        <div className="App" >
+          <div className="price">
+            <Price />
+          </div>
+          <div className="volume">
+            <Volume value={0} />
+          </div>
+
+          <div className="other">
+            <Confirmation />
+          </div>
+          <div className="fee">
+            <Fee />
+          </div>
+        </div >
+      </>
+    );
+  }
 }
 
 export default App;

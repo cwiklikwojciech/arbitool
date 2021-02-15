@@ -14,7 +14,7 @@ class HitBtc extends Component {
     }
     componentDidUpdate(prevProps) {
         if (this.props.value.crypto !== prevProps.value.crypto) {
-            fetch(`https://cors-anywhere.herokuapp.com/https://api.hitbtc.com/api/2/public/currency/${this.props.value.crypto}`)
+            fetch(`https://api.hitbtc.com/api/2/public/currency/${this.props.value.crypto}`)
                 .then(response => {
                     if (response.ok) {
                         return response

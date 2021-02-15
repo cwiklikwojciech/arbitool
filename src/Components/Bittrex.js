@@ -13,7 +13,7 @@ class Bittrex extends Component {
 
     componentDidUpdate(prevProps) {
         if (this.props.value.valueBittrex !== prevProps.value.valueBittrex) {
-            fetch('https://cors-anywhere.herokuapp.com/https://api.bittrex.com/api/v1.1/public/getcurrencies')
+            fetch('https://api.bittrex.com/api/v1.1/public/getcurrencies')
                 .then(response => {
                     if (response.ok) {
                         return response

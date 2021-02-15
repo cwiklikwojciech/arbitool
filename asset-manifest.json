@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/arbitool/static/css/main.94f0639c.chunk.css",
-    "main.js": "/arbitool/static/js/main.4ab1e0a1.chunk.js",
-    "main.js.map": "/arbitool/static/js/main.4ab1e0a1.chunk.js.map",
+    "main.js": "/arbitool/static/js/main.0351a560.chunk.js",
+    "main.js.map": "/arbitool/static/js/main.0351a560.chunk.js.map",
     "runtime-main.js": "/arbitool/static/js/runtime-main.30813f02.js",
     "runtime-main.js.map": "/arbitool/static/js/runtime-main.30813f02.js.map",
     "static/css/2.150d169a.chunk.css": "/arbitool/static/css/2.150d169a.chunk.css",
@@ -25,6 +25,6 @@
     "static/css/2.150d169a.chunk.css",
     "static/js/2.a1149e76.chunk.js",
     "static/css/main.94f0639c.chunk.css",
-    "static/js/main.4ab1e0a1.chunk.js"
+    "static/js/main.0351a560.chunk.js"
   ]
 }

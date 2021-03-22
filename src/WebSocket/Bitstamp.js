@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react'
-import './App.css';
+import '../App.css';
 
-import logoBtc from './image/logo1.jpg';
-import logoEth from './image/logo3.png';
-import logoLTC from './image/logo2.png';
-import logoXrp from './image/logo7.jpg';
+import logoBtc from '../image/logo1.jpg';
+import logoEth from '../image/logo3.png';
+import logoLTC from '../image/logo2.png';
+import logoXrp from '../image/logo7.jpg';
 
 function Bitstamp(props) {
 

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import Bitstamp from "./Bitstamp.js";
-import Kraken from "./Kraken.js";
+import Bitstamp from "./WebSocket/Bitstamp.js";
+import Kraken from "./WebSocket/Kraken.js";
 import axios from 'axios'
 
 class Price extends Component {

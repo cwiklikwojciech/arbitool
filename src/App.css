@@ -1,155 +1,152 @@
 .App {
-  text-align: center;
-  background-color: rgb(34, 34, 43);
-  color: white;
-  height: 100vh;
+	text-align: center;
+	background-color: rgb(34, 34, 43);
+	color: white;
+	height: 100vh;
 }
 
-
-.price{
-  color : white!important;
-  padding-bottom: 25px;
-  padding-top: 25px;
-  background-color: rgb(34, 34, 43);
+.price {
+	color: white !important;
+	padding-bottom: 25px;
+	padding-top: 25px;
+	background-color: rgb(34, 34, 43);
 }
 
-.container-fluid{
-  padding-top: 20px;
+.container-fluid {
+	padding-top: 20px;
 }
 
-.volume{
-  color : white;
-  background-color: rgb(34, 34, 43);
-  padding:0;
-  
+.volume {
+	color: white;
+	background-color: rgb(34, 34, 43);
+	padding: 0;
 }
 
-.other{
-  padding-top: 30px;
-  color : black;
-  background-color: rgb(34, 34, 43);
-  padding-bottom: 50px;
+.other {
+	padding-top: 30px;
+	color: black;
+	background-color: rgb(34, 34, 43);
+	padding-bottom: 50px;
 }
-.other.select{
-  margin-left: auto;
-  margin-right: auto;
+.other.select {
+	margin-left: auto;
+	margin-right: auto;
 }
-.fee{
-  padding-top: 30px;
-  color : white;
-  background-color: rgb(34, 34, 43);
-  padding-bottom: 50px;
+.fee {
+	padding-top: 30px;
+	color: white;
+	background-color: rgb(34, 34, 43);
+	padding-bottom: 50px;
 }
-.Confirmation{
-  max-width: 55%;
+.Confirmation {
+	max-width: 55%;
 }
 
 table {
-  font-family: arial, sans-serif;
-  margin-top: 25px;
-  width: 90%!important;
-  color : white!important;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 30px;
-  margin-bottom: 0rem!important;
+	font-family: arial, sans-serif;
+	margin-top: 25px;
+	width: 90% !important;
+	color: white !important;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	margin-bottom: 0rem !important;
 }
 
-.square{
-  background-color: white;
-  color: black;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  text-align: center;
-  padding: 15px;
-  width: 257.333px;
-  margin-top:10px;
+.square {
+	background-color: white;
+	color: black;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	text-align: center;
+	padding: 15px;
+	width: 257.333px;
+	margin-top: 10px;
 }
 .logo img {
-  width: 40px;
-  height: 40px;
-  float: left;
+	width: 40px;
+	height: 40px;
+	float: left;
 }
 
-.date{
-  font-size: 10px;
+.date {
+	font-size: 10px;
 }
-.name{
-  font-family: Open Sans,-apple-system,blinkmacsystemfont,Segoe UI,roboto,Helvetica Neue,arial,sans-serif;
-    word-spacing: 1px;
-    padding: 0;
-    color: #333433;
-    font-weight: 700;
+.name {
+	font-family: Open Sans, -apple-system, blinkmacsystemfont, Segoe UI, roboto, Helvetica Neue, arial, sans-serif;
+	word-spacing: 1px;
+	padding: 0;
+	color: #333433;
+	font-weight: 700;
 }
-.Btcvalue{
-  padding-top: 10px;
-  padding-bottom: 20px;
-  font-size: 25px;
-} 
-
-
-.select{
-  margin-top: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 40px;
-  width: 250px;
-}
-.coinBasePro{
-  width: 25%;
-  text-align: center;
-  margin-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
-
-}
-.online{
-  color: white;
-  font-weight: bold;
-  text-align: center;
-}
-.offline{
-  color: white;
-  font-weight: bold;
-}
-.crypto{
-  color: white;
-  font-weight: bold;
-  text-align: center!important;
-}
-.confirmation{
-  text-align: center!important;
-}
-table{
-  width: 90%!important;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-.other table{
-  text-align: center!important;
+.Btcvalue {
+	padding-top: 10px;
+	padding-bottom: 20px;
+	font-size: 25px;
 }
 
-.btn1{
-  padding-bottom: 5px;
+.select {
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 40px;
+	width: 250px;
 }
-.TableStyle{
-  border-collapse: collapse;
-  border-radius: 1em;
-  overflow: hidden;
+.coinBasePro {
+	width: 25%;
+	text-align: center;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.online {
+	color: white;
+	font-weight: bold;
+	text-align: center;
+}
+.offline {
+	color: white;
+	font-weight: bold;
+}
+.crypto {
+	color: white;
+	font-weight: bold;
+	text-align: center !important;
+}
+.confirmation {
+	text-align: center !important;
+}
+table {
+	width: 90% !important;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+.other table {
+	text-align: center !important;
 }
 
-.bit__stamp{
-  display: block;
+.btn1 {
+	padding-bottom: 5px;
+}
+.TableStyle {
+	border-collapse: collapse;
+	border-radius: 1em;
+	overflow: hidden;
+	padding-bottom: 50px;
 }
 
-td, th {
-  width: 20%;
-  text-align: left;
-  padding: 8px;
-}
-th:nth-child(n+2) {
-  border-bottom: 1px solid #dddddd;
+.bit__stamp {
+	display: block;
 }
 
+td,
+th {
+	width: 20%;
+	text-align: left;
+	padding: 8px;
+}
+th:nth-child(n + 2) {
+	border-bottom: 1px solid #dddddd;
+}

@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react'
-import './App.css';
+import '../App.css';
 import socket from 'socket.io'
 // import io from 'socket.io-client'
-import logoBtc from './image/logo1.jpg';
-import logoEth from './image/logo3.png';
-import logoLTC from './image/logo2.png';
-import logoXrp from './image/logo7.jpg';
+import logoBtc from '../image/logo1.jpg';
+import logoEth from '../image/logo3.png';
+import logoLTC from '../image/logo2.png';
+import logoXrp from '../image/logo7.jpg';
 
 
 function Kraken(props) {
@@ -125,9 +125,6 @@ function Kraken(props) {
             x3.send(webSocketMessage3);
 
         }, 20000);
-
-
-
 
     }, [])
 

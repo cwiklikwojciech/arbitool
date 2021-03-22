@@ -1,30 +1,26 @@
 {
   "files": {
-    "main.css": "/arbitool/static/css/main.94f0639c.chunk.css",
-    "main.js": "/arbitool/static/js/main.0351a560.chunk.js",
-    "main.js.map": "/arbitool/static/js/main.0351a560.chunk.js.map",
+    "main.css": "/arbitool/static/css/main.43fb107f.chunk.css",
+    "main.js": "/arbitool/static/js/main.b2341633.chunk.js",
+    "main.js.map": "/arbitool/static/js/main.b2341633.chunk.js.map",
     "runtime-main.js": "/arbitool/static/js/runtime-main.30813f02.js",
     "runtime-main.js.map": "/arbitool/static/js/runtime-main.30813f02.js.map",
     "static/css/2.150d169a.chunk.css": "/arbitool/static/css/2.150d169a.chunk.css",
-    "static/js/2.a1149e76.chunk.js": "/arbitool/static/js/2.a1149e76.chunk.js",
-    "static/js/2.a1149e76.chunk.js.map": "/arbitool/static/js/2.a1149e76.chunk.js.map",
+    "static/js/2.47ddbaed.chunk.js": "/arbitool/static/js/2.47ddbaed.chunk.js",
+    "static/js/2.47ddbaed.chunk.js.map": "/arbitool/static/js/2.47ddbaed.chunk.js.map",
     "index.html": "/arbitool/index.html",
     "static/css/2.150d169a.chunk.css.map": "/arbitool/static/css/2.150d169a.chunk.css.map",
-    "static/css/main.94f0639c.chunk.css.map": "/arbitool/static/css/main.94f0639c.chunk.css.map",
-    "static/js/2.a1149e76.chunk.js.LICENSE.txt": "/arbitool/static/js/2.a1149e76.chunk.js.LICENSE.txt",
+    "static/css/main.43fb107f.chunk.css.map": "/arbitool/static/css/main.43fb107f.chunk.css.map",
+    "static/js/2.47ddbaed.chunk.js.LICENSE.txt": "/arbitool/static/js/2.47ddbaed.chunk.js.LICENSE.txt",
     "static/media/logo1.06864437.jpg": "/arbitool/static/media/logo1.06864437.jpg",
     "static/media/logo2.99a4f9a9.png": "/arbitool/static/media/logo2.99a4f9a9.png",
-    "static/media/logo4.87db894d.jpg": "/arbitool/static/media/logo4.87db894d.jpg",
-    "static/media/logo5.4f253578.jpg": "/arbitool/static/media/logo5.4f253578.jpg",
-    "static/media/logo7.c6b34685.jpg": "/arbitool/static/media/logo7.c6b34685.jpg",
-    "static/media/logo8.2a7e1a18.png": "/arbitool/static/media/logo8.2a7e1a18.png",
-    "static/media/logo9.d987a142.png": "/arbitool/static/media/logo9.d987a142.png"
+    "static/media/logo7.c6b34685.jpg": "/arbitool/static/media/logo7.c6b34685.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.30813f02.js",
     "static/css/2.150d169a.chunk.css",
-    "static/js/2.a1149e76.chunk.js",
-    "static/css/main.94f0639c.chunk.css",
-    "static/js/main.0351a560.chunk.js"
+    "static/js/2.47ddbaed.chunk.js",
+    "static/css/main.43fb107f.chunk.css",
+    "static/js/main.b2341633.chunk.js"
   ]
 }

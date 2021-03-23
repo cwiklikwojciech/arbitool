@@ -6,18 +6,35 @@ import axios from 'axios'
 class Price extends Component {
 
     state = {
-        multiplier: 3,
-        isVisibilityBS: true,
-        isVisibilityKR: false
+        visibilityStateBS: 'block',
+        visibilityStateKr: 'none',
+        multiplier: 3
 
     };
 
-    toggleClickBitstamp = () => this.setState(prevState => ({
-        isVisibilityBS: !prevState.isVisibilityBS
-    }))
-    toggleClickKraken = () => this.setState(prevState => ({
-        isVisibilityKR: !prevState.isVisibilityKR
-    }))
+    handleClickBitstamp() {
+        if (this.state.visibilityStateBS == 'none') {
+            this.setState({
+                visibilityStateBS: 'block'
+            })
+        } else {
+            this.setState({
+                visibilityStateBS: 'none'
+            })
+        }
+
+    }
+    handleClickKraken() {
+        if (this.state.visibilityStateKr == 'none') {
+            this.setState({
+                visibilityStateKr: 'block'
+            })
+        } else {
+            this.setState({
+                visibilityStateKr: 'none'
+            })
+        }
+    }
 
     handleClickPln() {
         axios.get('https://api.nbp.pl/api/exchangerates/rates/a/usd/last/1/?format=json')
@@ -41,23 +58,15 @@ class Price extends Component {
 
     render() {
 
-        const visibilityBS = this.state.isVisibilityBS
-            ? <Bitstamp value={this.state.multiplier} x={true} />
-            : null
-
-        const visibilityKR = this.state.isVisibilityKR
-            ? <Kraken value={this.state.multiplier} />
-            :null
-
         return (
             <>
                 <div className="btn1">
                     <div class="btn-group btn-group-justified">
                         <div class="btn-group">
-                            <button type="button" class="btn btn-primary" onClick={this.toggleClickBitstamp.bind(this)} >Bitstamp</button>
+                            <button type="button" class="btn btn-primary" onClick={this.handleClickBitstamp.bind(this)} >Bitstamp</button>
                         </div>
                         <div class="btn-group">
-                            <button type="button" class="btn btn-primary" onClick={this.toggleClickKraken.bind(this)}>Kraken</button>
+                            <button type="button" class="btn btn-primary" onClick={this.handleClickKraken.bind(this)}>Kraken</button>
                         </div>
                     </div>
                 </div>
@@ -73,12 +82,11 @@ class Price extends Component {
                     </div>
                 </div>
 
-                <div className="bit__stamp">Bitstamp {visibilityBS}</div>
-                <div className="kraken" >Kraken {visibilityKR} </div>
+                <div className="bit__stamp" style={{ display: this.state.visibilityStateBS }}>Bitstamp <Bitstamp value={this.state.multiplier} /></div>
+                <div className="kraken" style={{ display: this.state.visibilityStateKr }}>Kraken <Kraken value={this.state.multiplier} /></div>
 
             </>
         )
     }
-
 }
 export default Price;

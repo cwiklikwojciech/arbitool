@@ -6,32 +6,32 @@ import axios from 'axios'
 class Price extends Component {
 
     state = {
-        visibilityStateBS: 'block',
-        visibilityStateKr: 'none',
-        multiplier: 3
+        multiplier: 3,
+        isVisibilityBS: true,
+        isVisibilityKR: false
 
     };
 
     handleClickBitstamp() {
-        if (this.state.visibilityStateBS == 'none') {
+        if (this.state.isVisibilityBS === false) {
             this.setState({
-                visibilityStateBS: 'block'
+                isVisibilityBS: true
             })
         } else {
             this.setState({
-                visibilityStateBS: 'none'
+                isVisibilityBS: false
             })
         }
 
     }
     handleClickKraken() {
-        if (this.state.visibilityStateKr == 'none') {
+        if (this.state.isVisibilityKR === false) {
             this.setState({
-                visibilityStateKr: 'block'
+                isVisibilityKR: true
             })
         } else {
             this.setState({
-                visibilityStateKr: 'none'
+                isVisibilityKR: false
             })
         }
     }
@@ -58,6 +58,14 @@ class Price extends Component {
 
     render() {
 
+        const visibilityBS = this.state.isVisibilityBS
+            ? <Bitstamp value={this.state.multiplier} />
+            :null
+
+        const visibilityKR = this.state.isVisibilityKR
+            ? <Kraken value={this.state.multiplier} />
+            :null
+
         return (
             <>
                 <div className="btn1">
@@ -82,8 +90,8 @@ class Price extends Component {
                     </div>
                 </div>
 
-                <div className="bit__stamp" style={{ display: this.state.visibilityStateBS }}>Bitstamp <Bitstamp value={this.state.multiplier} /></div>
-                <div className="kraken" style={{ display: this.state.visibilityStateKr }}>Kraken <Kraken value={this.state.multiplier} /></div>
+                <div className="bit__stamp">Bitstamp {visibilityBS}</div>
+                <div className="kraken" >Kraken {visibilityKR} </div>
 
             </>
         )

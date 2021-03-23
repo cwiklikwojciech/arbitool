@@ -12,29 +12,12 @@ class Price extends Component {
 
     };
 
-    handleClickBitstamp() {
-        if (this.state.isVisibilityBS === false) {
-            this.setState({
-                isVisibilityBS: true
-            })
-        } else {
-            this.setState({
-                isVisibilityBS: false
-            })
-        }
-
-    }
-    handleClickKraken() {
-        if (this.state.isVisibilityKR === false) {
-            this.setState({
-                isVisibilityKR: true
-            })
-        } else {
-            this.setState({
-                isVisibilityKR: false
-            })
-        }
-    }
+    toggleClickBitstamp = () => this.setState(prevState => ({
+        isVisibilityBS: !prevState.isVisibilityBS
+    }))
+    toggleClickKraken = () => this.setState(prevState => ({
+        isVisibilityKR: !prevState.isVisibilityKR
+    }))
 
     handleClickPln() {
         axios.get('https://api.nbp.pl/api/exchangerates/rates/a/usd/last/1/?format=json')
@@ -71,10 +54,10 @@ class Price extends Component {
                 <div className="btn1">
                     <div class="btn-group btn-group-justified">
                         <div class="btn-group">
-                            <button type="button" class="btn btn-primary" onClick={this.handleClickBitstamp.bind(this)} >Bitstamp</button>
+                            <button type="button" class="btn btn-primary" onClick={this.toggleClickBitstamp.bind(this)} >Bitstamp</button>
                         </div>
                         <div class="btn-group">
-                            <button type="button" class="btn btn-primary" onClick={this.handleClickKraken.bind(this)}>Kraken</button>
+                            <button type="button" class="btn btn-primary" onClick={this.toggleClickKraken.bind(this)}>Kraken</button>
                         </div>
                     </div>
                 </div>
@@ -96,5 +79,6 @@ class Price extends Component {
             </>
         )
     }
+
 }
 export default Price;

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useRef, createRef,useState, useEffect } from 'react'
 import '../App.css';
 
 import logoBtc from '../image/logo1.jpg';
@@ -6,7 +6,10 @@ import logoEth from '../image/logo3.png';
 import logoLTC from '../image/logo2.png';
 import logoXrp from '../image/logo7.jpg';
 
-function Bitstamp(props) {
+
+
+
+export default function Bitstamp (props){
 
     const [bsBtc, setBSBtc] = useState([]);
     const [bsEth, setBSEth] = useState([]);
@@ -18,8 +21,12 @@ function Bitstamp(props) {
     const [dateLtc, setDateLtc] = useState([]);
     const [dateXrp, setDateXrp] = useState([]);
 
-    useEffect(() => {
 
+    
+    useEffect(() => {
+        
+    
+    
         var subscribeMsgBTC = {
             "event": "bts:subscribe",
             "data": {
@@ -68,7 +75,7 @@ function Bitstamp(props) {
 
 
         function getDate() {
-
+          
             var date = new Date();
             let currentHours = date.getHours();
             let currentMinute = date.getMinutes();
@@ -87,6 +94,7 @@ function Bitstamp(props) {
 
             const html = ` ${currentHours}:${currentMinute}:${currentSecond}   ${currentDate}:${currentMonth}:${currentYear}`
             return html;
+            
         }
 
 
@@ -116,10 +124,18 @@ function Bitstamp(props) {
         }
 
 
-    }, [])
 
+        
+        
+    }, []);
+
+ 
+
+   
+   
     return (
         <>
+            <div >
             <div className="container-fluid">
                 <div className="row">
                     <div className="col" >
@@ -172,11 +188,12 @@ function Bitstamp(props) {
                     </div></div>
                 </div>
             </div>
-
+            </div>
 
         </>
 
     )
+    
 }
 
-export default Bitstamp
+

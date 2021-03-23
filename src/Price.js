@@ -42,8 +42,8 @@ class Price extends Component {
     render() {
 
         const visibilityBS = this.state.isVisibilityBS
-            ? <Bitstamp value={this.state.multiplier} />
-            :null
+            ? <Bitstamp value={this.state.multiplier} x={true} />
+            : null
 
         const visibilityKR = this.state.isVisibilityKR
             ? <Kraken value={this.state.multiplier} />

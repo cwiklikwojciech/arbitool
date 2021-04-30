@@ -9,7 +9,6 @@ function Market() {
 	const notify = (x) => toast(x);
 
 	useEffect(() => {
-		notify('Start');
 		setInterval(() => {
 			fetch('https://api.bitbay.net/rest/trading/stats').then((response) => response.json()).then((data) => {
 				let i = 0;
@@ -57,10 +56,10 @@ function Market() {
 										counterY++;
 									}
 								}
-								if (res.data.items[1].r <= 1) {
+								if (res.data.items[1].r <= 10) {
 									type = 1;
 								}
-								if (res.data.items[1].r > 1 && res.data.items[1].r <= 5) {
+								if (res.data.items[1].r > 7 && res.data.items[1].r <= 5) {
 									type = 7;
 								}
 								if (res.data.items[1].r > 5) {
@@ -78,7 +77,7 @@ function Market() {
 
 										//+ ' --- ' + k + 'ilość s/b = ' + counterX + ' --- ' + counterY + ' cena : ' + res.data.items[1].r);
 										//console.log((((temporary[k - 2] - temporary[0]) / temporary[k - 2]) * 100).toFixed(4));
-										notify('Test');
+
 										if (
 											temporary[k - 1] === 'AMLT-PLN' ||
 											temporary[k - 1] === 'BOB-PLN' ||

@@ -18,8 +18,8 @@ $ npm install
 The application is designed to compare prices and volumes on cryptocurrency exchanges.
 
 Comparison of prices and volumes on exchanges:
-*Bitbay
-*Bitstamp
-*Kraken
+* Bitbay
+* Bitstamp
+* Kraken
 
 

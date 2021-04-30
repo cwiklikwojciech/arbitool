@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { Table } from 'react-bootstrap';
 
 const ShowVolume = ({showVolume , bitstamp , kraken}) => {
-    const [showBtc, setShowBtc] = React.useState('');
+    const [showBtc, setShowBtc] = useState('');
     return (
         <>
         <div class="btn-group btn-group-justified" >

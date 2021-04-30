@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React  from 'react'
 
 import Bitstamp from "../WebSocket/Bitstamp.js";
 import Kraken from "../WebSocket/Kraken.js";
